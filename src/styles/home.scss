@@ -18,12 +18,13 @@
   h1 {
     color: white;
     font: 900 10rem "Noto Sans";
-    transition: text-shadow 0.5s; /* Smooth transition for text shadow */
+    transition: text-shadow 1s; /* Smooth transition for text shadow */
   }
 
   /* Add glowing effect on hover */
   h1:hover {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect with a greyish color */
+    text-shadow: 0 0 400px rgba(255, 255, 255, 0.9); /* Increased blur radius for stronger glow */
+    transition: text-shadow 1s;
   }
 }
 
