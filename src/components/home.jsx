@@ -8,9 +8,11 @@ export default function Home() {
       <main>
        <h1 id="glow-effect">RAHUL's</h1>
         <h1 id="glow-effect">Creative Space</h1>
+        <iframe src="https://lottie.host/embed/7e1646b8-5dc0-443f-8ae4-8596209dcf45/ergIB2UEn9.json"></iframe>
       </main>
+      
     </div>
-
+     
     <div id="project">
       <h2 id="projects">Projects</h2>
       <div id="SpotifyClone">
