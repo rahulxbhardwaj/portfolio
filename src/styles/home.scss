@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+#home {
+  width: 100%;
+  height: 100vh;
+
+  main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: white;
+    font: 900 10rem "Noto Sans";
+    transition: text-shadow 0.5s; /* Smooth transition for text shadow */
+  }
+
+  /* Add glowing effect on hover */
+  h1:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect with a greyish color */
+  }
+}
+
+#project {
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+// _________________________________________________________________________________________
+
+#SpotifyClone {
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#SpotifyClone h4 {
+    margin-top: 0px; /* Adjust the margin between the image and the h4 */
+}
+
+#spotify {
+  margin-top:5rem;
+  width:70vw;
+  height:auto;
+  // left: 2rem;
+  // transform: scale(0.7); 
+  border-radius: 10px;
+
+  &:hover{
+    transform: scale(1.2);
+    transition : 1s;
+  }
+}
+#projects {
+  color: white;
+  font: 900 10rem "Noto Sans";
+  margin-top: 5rem;
+  padding-top:10rem;
+  text-align:center;
+}
+
+// ---------------------Terminal Code--------------------------------------
+
+.container {
+  margin-top:5rem;
+  width: 500px;
+  height: 100px;
+}
+
+.terminal_toolbar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #212121;
+  justify-content: space-between;
+}
+
+.butt {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(#7d7871 0%, #595953 100%);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+}
+
+.btn-color {
+  background: #ee411a;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.butt--exit {
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+
+.add_tab {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.terminal_body {
+  background: rgba(0, 0, 0, 0.6);
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.terminal_promt {
+  display: flex;
+}
+
+.terminal_promt span {
+  margin-left: 4px;
+}
+
+.terminal_user {
+  color: #1eff8e;
+}
+
+.terminal_location {
+  color: #4878c0;
+}
+
+.terminal_bling {
+  color: #dddddd;
+}
+
+.terminal_cursor {
+  display: block;
+  height: 14px;
+  width: 5px;
+  margin-left: 10px;
+  animation: curbl 1200ms linear infinite;
+}
+
+@keyframes curbl {
+
+  0% {
+    background: #ffffff;
+  }
+
+  49% {
+    background: #ffffff;
+  }
+
+  60% {
+    background: transparent;
+  }
+
+  99% {
+    background: transparent;
+  }
+
+  100% {
+    background: #ffffff;
+  }
+}
+
+p{
+  color:white;
+}
+
+// _______________________Random Fact Api Css____________________________________________
+
+
+
+
+
+
+
+
+#randomfactapi{
+  margin-top:5rem;
+
+  h2{
+    color:white;
+    margin-left:3rem;
+    
+  }
+}
+
+.code-editor {
+  margin-top:2rem;
+  max-width: 300px;
+  background-color: #1d1e22;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  color: rgb(212 212 212);
+}
+
+.icon {
+  width: 20px;
+  transition: .2s ease;
+}
+
+.icon:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #6e7281;
+}
+
+.editor-content {
+  margin: 0 10px 10px;
+  color: white;
+}
+
+.property {
+  margin-left: 30px;
+}
+
+.property:hover {
+  cursor: text;
+}
+
+.editor-content .color-0 {
+  color: rgb(86 156 214);
+}
+
+.editor-content .color-1 {
+  color: rgb(182 206 168);
+}
+
+.editor-content .color-2 {
+  color: rgb(156 220 254);
+}
+
+.editor-content .color-3 {
+  color: rgb(207 146 120);
+}
+
+.color-preview-1,.color-preview-2 {
+  height: 8px;
+  width: 8px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.color-preview-1 {
+  background-color: #1d1e22;
+}
+
+.color-preview-1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}

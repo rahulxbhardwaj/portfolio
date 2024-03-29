@@ -1,0 +1,95 @@
+@import "color";
+
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+// ___________________________________________________________________________
+
+
+
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+
+  h1 {
+    text-transform: uppercase;
+    color: $heading;
+  }
+
+  main {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      color: #ffffff;
+      margin: 1rem;
+      position: relative; /* Necessary for pseudo-element */
+      transition: color 0.5s ease-in-out, text-decoration 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+      &:hover {
+        color: #37FF8B;
+        text-decoration: underline;
+        font-size: 2rem;
+        &::after {
+          transition-delay: 0.5s; /* Same duration as the transition */
+          content: ''; /* Required for ::after to work */
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
