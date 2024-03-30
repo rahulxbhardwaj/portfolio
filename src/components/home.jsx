@@ -1,6 +1,7 @@
 import spotify from '../assets/spotifyclone.png';
 import CodeEditor from '../components/randomFact';
 import Card from '../components/card';
+import Contact from '../components/contact';
 export default function Home() {
   return (
     <>
@@ -74,8 +75,15 @@ export default function Home() {
         <Card />
         
       </div>
+// ------------------------------------Contact PAGE-------------------------------------------------------
+
+      <div id="contact" class="contactt">
+        <h2 id="h2connect">Let's Link Up</h2>
+      <Contact />
+      </div>
+
      
     </>
-   
+
   );
 }

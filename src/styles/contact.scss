@@ -1,0 +1,18 @@
+.card {
+  /* Removed existing styles as they are inline in the HTML */
+}
+
+.inner {
+  width: [900px]; /* Baseline width */
+  width: clamp(900px, 100vw, 1050px); /* Responsive sizing */
+}
+
+.content {
+  /* No CSS changes needed for this element */
+}
+
+.seal {
+  /* No CSS changes needed for this element */
+}
+
+/* No changes needed for remaining element classes (tp, lft, rgt, btm) */
