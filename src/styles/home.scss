@@ -23,7 +23,7 @@ iframe {
     text-transform: uppercase;
   }
 
-  h1 {
+  h1{
     color: white;
     font: 900 10rem "Noto Sans";
     transition: text-shadow 1s; /* Smooth transition for text shadow */
@@ -36,6 +36,17 @@ iframe {
   }
 }
 
+ #h2tech{
+   color: white;
+   font: 900 9rem "Noto Sans";
+   transition: text-shadow 1s; /* Smooth transition for text shadow */
+   text-align:center;
+   padding-left:20rem;
+   padding-bottom:40rem;
+ }
+
+
+
 #project {
   width: 100%;
   height: 100%;
@@ -45,6 +56,48 @@ iframe {
       linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
 }
+
+// -----------------------------------------TECHTOOLKIT BACKGROUND---------------------------------------------------------------
+
+#techtoolkit {
+  /* Basic dimensions and centering */
+  padding-top:20rem;
+  padding-bottom:5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Dark mode colors and gradient */
+  background: #121212; /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+
+
 
 // _________________________________________________________________________________________
 
@@ -231,11 +284,48 @@ p{
 #randomfactapi{
   margin-top:5rem;
 
-  h2{
-    color:white;
-    margin-left:3rem;
-    
+  h2 {
+    color: white;
+    margin-left: 3rem;
+    font-size: 2rem;
+    position: relative; /* Add position relative for absolute positioning of pseudo-element */
+    transition: color 1s, font-size 1s; /* Add transition for color and font-size */
   }
+
+  h2:hover {
+    color: #37ff8b;
+    text-decoration: italic;
+    font-size: 3rem;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align with left edge */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the line */
+    background-color: #37ff8b; /* Color of the line */
+    transition: width 0.5s, opacity 0.5s; /* Transition for width and opacity */
+    opacity: 0; /* Initially invisible */
+  }
+
+  h2:hover::after {
+    width: 100%; /* Expand the line to full width */
+    opacity: 1; /* Make the line visible */
+  }
+
+  h2:not(:hover) {
+    font-size: 2rem; /* Return to original font size */
+  }
+
+  h2:not(:hover)::after {
+    width: 0; /* Shrink the line back to zero width */
+    opacity: 0; /* Make the line invisible */
+  }
+
+
+ 
 }
 
 .code-editor {

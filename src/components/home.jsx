@@ -1,6 +1,6 @@
 import spotify from '../assets/spotifyclone.png';
 import CodeEditor from '../components/randomFact';
-
+import Card from '../components/card';
 export default function Home() {
   return (
     <>
@@ -54,18 +54,27 @@ export default function Home() {
 
         <div id="randomfactapi">
          <h2>Random Fact Api</h2>
-             <CodeEditor />
-        </div>
+             <CodeEditor />  
+        </div><br></br>
    
+
+
     
 
-{/* _____________________________________________________________________________________ */}
+
+        {/* ---------------------------------------------------------------- */}
+        
       </div>
-
-   
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     </div>
+      {/* _________________TECH STACK________________Expandable Cards_________________________________________________ */}
       
-    
+      <div id="techtoolkit">
+        <h2 id="h2tech">Tech Toolkit</h2>
+        <Card />
+        
+      </div>
+     
     </>
    
   );

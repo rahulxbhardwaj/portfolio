@@ -15,7 +15,7 @@ const Header = () => {
         {/* <iframe src="https://lottie.host/embed/fd2187c2-857e-4502-976f-25411a2c0b98/qkD9y9B4NF.json" id="if1"></iframe> */}
           <HashLink to={"/#home"} class="block-link">Home</HashLink>
           <HashLink to={"/#project"} class="block-link">Projects</HashLink>
-          <HashLink to={"/#about"} class="block-link">Tech Toolkit</HashLink>
+          <HashLink to={"/#techtoolkit"} class="block-link">Tech Toolkit</HashLink>
           <HashLink to={"/contact"} class="block-link">Contact</HashLink>
           <HashLink to={"/services"} class="block-link">Services</HashLink>
       </main>
